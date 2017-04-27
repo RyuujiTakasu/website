@@ -15,164 +15,144 @@
   <body>
 
     <!--Begin Nav-->
-    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+    <header class="sticky-shrinknav-header">
+      <h1 class="sticky-shrinknav-header-title">Dank Meme Time</h1>
+      <ul class="menu align-center sticky-shrinknav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
 
-      <ul class="vertical menu" data-accordion-menu>
-        <li><a href="#">SERVICES</a>
-          <ul class="menu vertical nested">
-            <li><a href="#">Brand</a></li>
-            <li><a href="#">Web Apps</a></li>
-            <li><a href="#">Mobile Apps</a></li>
-          </ul>
-        </li>
-        <li><a href="#">PRODUCTS</a>
-          <ul class="menu vertical nested">
-            <li><a href="#">Product 1</a></li>
-            <li><a href="#">Product 2</a></li>
-            <li><a href="#">Product 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">STOCKISTS</a>
-          <ul class="menu vertical nested">
-            <li><a href="#">London</a></li>
-            <li><a href="#">New York</a></li>
-            <li><a href="#">Paris</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="vertical menu">
-        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-      <ul class="vertical menu">
-        <li><a href="#">Journal</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Students</a></li>
-      </ul>
-      <ul class="menu simple social-links">
-        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
 
-    <div class="off-canvas-content" data-off-canvas-content>
-      <div class="nav-bar">
-        <div class="nav-bar-left">
-          <a class="nav-bar-logo"><img class="logo" src="http://placehold.it/150x30"></a>
-        </div>
-        <div class="nav-bar-right">
-          <ul class="menu">
-            <li class="hide-for-small-only"><a href="#">TOUR</a></li>
-            <li class="hide-for-small-only"><a href="#">LOGIN</a></li>
-            <li>
-              <li>
-                <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-                  <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
-                  <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <body>
-          <div class="body-info">
-            <h4> Multilevel Off-Canvas </h4>
-            <a class="button disabled" href="#">Watch Video (coming soon)</a>
-          </div>
-        </div>
-      </body>
-    </div>
+
     <!--End Nav-->
 
-    <!-- Map Modal -->
-
-    <div class="reveal-modal" id="mapModal">
-      <h4>Magical Area in which we live in</h4>
-      <a href="https://goo.gl/maps/NtRRkBUKiLk"><img src="image/test.PNG" /> </a>
-
-      <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
-
-
     <!--Begin Hero-->
-    <section class="hero">
-      <div class="row">
-        <div class="large-6 large-push-2 columns">
-          <div class="circle-bg quote-1">
-            <p>I found freedom.<br> Losing all hope was freedom.</p>
-          </div>
-        </div>
-        <div class="large-6 large-pull-2 columns">
-          <div class="circle-bg quote-2">
-            <p>It's only after we've lost everything that we're free to do anything.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="row text-center">
-      <div class="small-12 columns">
-        <h1>The Queen is their slave</h1>
-        <h2 class="subheader">You met me at a very strange time in my life.</h2>
+    <div class="hero-section">
+      <div class="hero-section-text">
+        <h1>Meme Database</h1>
+        <h5>Dating back to the age of sanik</h5>
       </div>
     </div>
+
     <!--End Hero-->
 
     <!--Begin Content-->
-    <br>
-    <div class="row">
-      <div class="column medium-4">
-
-        <ul class="pricing-table no-bullet text-center">
-          <li class="title">Standard</li>
-          <li class="price">$99.99</li>
-          <li class="description">An awesome description</li>
-          <li>1 Database</li>
-          <li>5GB Storage</li>
-          <li>20 Users</li>
-          <li><a class="button" href="#">Buy Now</a></li>
-        </ul>
-      </div>
-      <div class="column medium-8">
-        <p>Find the best price you want today!</p>
-
+    <div class="row align-center">
+      <div class="product-image-gallery">
+        <img class="pdp-product-image" id="main-product-image" src="http://placehold.it/350x350?text=Image+1" alt="">
+        <br>
+        <div class="menu-centered">
+          <ul class="menu product-thumbs">
+            <li> <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+1"><img src="http://placehold.it/50x50" alt=""></a> </li>
+            <li> <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+2"><img src="http://placehold.it/50x50" alt=""></a> </li>
+            <li> <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+3"><img src="http://placehold.it/50x50" alt=""></a> </li>
+          </ul>
         </div>
       </div>
+    </div>
+
 
       <!--End Content-->
 
+      <!--Video-->
+      <html>
+      <body>
+        <iframe src="https://www.youtube.com/embed/O2T1m5ZwcJA"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      </body>
+      </html>
+
+      <html>
+      <body>
+        <iframe src="https://www.youtube.com/embed/l-jTjDdSzbU"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      </body>
+      </html>
+
+        <!--Video-->
+
+
       <!--Begin Footer-->
-      <footer class="footer">
-        <div class="row">
-          <div class="small-12 columns">
-            <p class="slogan">Finger-lickin' good</p>
-            <p class="links">
-              <a href="#">Home</a>
-              <a href="#">Blog</a>
-              <a href="#">Pricing</a>
-              <a href="#">About</a>
-              <a href="#">Faq</a>
-              <a href="#">Contact</a>
-            </p>
-            <p class="copywrite">Copywrite not copypwrite © 2015</p>
+      <footer class="marketing-site-footer">
+        <div class="row medium-unstack">
+          <div class="medium-4 columns">
+            <h4 class="marketing-site-footer-name">Yeti Snowcone</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
+            <ul class="menu marketing-site-footer-menu-social simple">
+              <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="medium-4 columns">
+            <h4 class="marketing-site-footer-title">Contact Info</h4>
+            <div class="marketing-site-footer-block">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>100 W Rincon<br>San Francisco, CA 94015</p>
+            </div>
+            <div class="marketing-site-footer-block">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>1 (800) 555-5555</p>
+            </div>
+            <div class="marketing-site-footer-block">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>yetirules@fakeemail.com</p>
+            </div>
+          </div>
+          <div class="medium-4 columns">
+            <h4 class="marketing-site-footer-title">Instagram</h4>
+            <div class="row small-up-3">
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+              <div class="column column-block">
+                <img src="http://placehold.it/75" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marketing-site-footer-bottom">
+          <div class="row large-unstack align-middle">
+            <div class="column">
+              <p>&copy; 2017 No rights reserved</p>
+            </div>
+            <div class="column">
+              <ul class="menu marketing-site-footer-bottom-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
+
+
 
       <!--End Footer-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/content.js"></script>
   </body>
 </html>

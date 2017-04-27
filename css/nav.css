@@ -1,93 +1,74 @@
-.nav-bar {
+
+body {
+  padding-top: 330px;
+}
+
+.sticky-shrinknav-menu {
+  position: absolute;
+  bottom: 0;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  background-color: rgba(23, 121, 186, 0.1);
+  transition: all 0.5s ease;
+}
+
+.sticky-shrinknav-menu li {
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.sticky-shrinknav-menu li:hover {
+  box-shadow: 0 0 0 1px #fefefe;
+}
+
+.sticky-shrinknav-menu a {
+  color: #fefefe;
+}
+
+.sticky-shrinknav-header-title {
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-transform: translateY(-1.875rem);
+  -ms-transform: translateY(-1.875rem);
+  transform: translateY(-1.875rem);
+  margin-bottom: 0;
+  color: #fefefe;
+}
+
+.sticky-shrinknav-header {
+  width: 100%;
+  height: 300px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  background: #2c3840;
-  height: 75px;
-  font-family: "Titillium Web", sans-serif;
-  margin-bottom: 75px; }
-  .nav-bar .nav-bar-logo {
-    padding: 1.8rem; }
-    .nav-bar li {
-      background: #2c3840; }
-      .nav-bar a {
-        color: #fff;
-        transition: color 0.2s ease-in; }
-        .nav-bar a:hover {
-          color: #a8b8c3; }
-          @media screen and (max-width: 39.9375em) {
-            .nav-bar {
-              height: 53.57143px; } }
-              .nav-bar .offcanvas-trigger {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 1.6rem;
-                color: #fff;
-                font-family: "Titillium Web", sans-serif;
-                text-transform: uppercase;
-                background-color: #566d7c;
-                transition: background-color 0.2s ease-in;
-                cursor: pointer; }
-                .nav-bar .offcanvas-trigger .offcanvas-trigger-text {
-                  margin-right: 0.25rem;
-                  margin-top: 0.25rem; }
-                  .nav-bar .offcanvas-trigger:hover {
-                    background-color: #6b879a; }
-                    @media screen and (max-width: 39.9375em) {
-                      .nav-bar .offcanvas-trigger {
-                        padding: 0.9rem; } }
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2196e3;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
 
-                        .off-canvas {
-                          background: #222b31;
-                          padding: 20px;
-                          color: #fff;
-                          font-family: "Titillium Web", sans-serif; }
-                          .off-canvas > .menu {
-                            margin-bottom: 1rem; }
-                            .off-canvas .menu a {
-                              color: rgba(255, 255, 255, 0.6);
-                              padding-top: 7px;
-                              padding-bottom: 7px;
-                              transition: color .2s ease-in; }
-                              .off-canvas .menu a:hover {
-                                color: #fff; }
-                                .off-canvas .fa {
-                                  color: #fff; }
-                                  .off-canvas .is-accordion-submenu-parent > a::after {
-                                    border-color: rgba(255, 255, 255, 0.6) transparent transparent; }
-                                    .off-canvas .social-links {
-                                      margin-left: 20px; }
-                                      .off-canvas .social-links li {
-                                        margin-right: 5px; }
-                                        .off-canvas .social-links a:hover .fa {
-                                          color: #bfbfbf;
-                                          transition: color .2s ease-in; }
-                                          .off-canvas .social-links .fa {
-                                            font-size: 2.2rem; }
+body.sticky-shrinknav-wrapper {
+  padding-top: 130px;
+}
 
-                                            .body-info {
-                                              text-align: center;
-                                              font-family: "Titillium Web", sans-serif;
-                                              color: #2c3840; }
-                                              .body-info .button {
-                                                margin: 1rem 0;
-                                                padding: 0.85em 2em; }
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+  height: 3.75rem;
+  background-color: rgba(23, 121, 186, 0.9);
+}
 
-                                                .is-open + .off-canvas-content .hamburger .line:nth-child(1),
-                                                .is-open + .off-canvas-content .hamburger .line:nth-child(3) {
-                                                  width: 12px; }
-                                                  .is-open + .off-canvas-content .hamburger .line:nth-child(1) {
-                                                    transform: translateX(-5px) rotate(-45deg); }
-                                                    .is-open + .off-canvas-content .hamburger .line:nth-child(3) {
-                                                      transform: translateX(-5px) rotate(45deg); }
-
-                                                      .hamburger .line {
-                                                        width: 20px;
-                                                        height: 2px;
-                                                        background-color: #fff;
-                                                        display: block;
-                                                        margin: 3px auto;
-                                                        transition: all 0.3s ease-in-out; }
-                                                        .hamburger .line:last-child {
-                                                          margin-bottom: 0; }
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
