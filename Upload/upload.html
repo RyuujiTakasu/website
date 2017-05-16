@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/button.css">
   </head>
   <body>
 
@@ -19,10 +19,10 @@
       <h1 class="sticky-shrinknav-header-title">Dank Meme Time</h1>
       <ul class="menu align-center sticky-shrinknav-menu">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="../Aboutt/about.html">About</a></li>
         <li><a href="../Galleryy/aye.html">Gallery</a></li>
         <li><a href="../Videos/video.html">Videos</a></li>
-        <li><a href="../Upload/upload.html">Upload Memes</a></li>
+        <li><a href="#">Upload Memes</a></li>
       </ul>
     </header>
 
@@ -30,49 +30,43 @@
 
     <!--End Nav-->
 
+    <!--End Nav-->
 
-    <!--Begin Content-->
-    <div class="about-the-author">
-  <h3 class="author-title">About the Page</h3>
-  <div class="row">
-    <div class="small-12 medium-4 columns">
-      <div class="author-image">
-        <img src="../randoimage/pepe.jpg">
-      </div>
-      <div class="author-social">
-        <a href="#">
-          <span class="fa-stack fa-lg facebook">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a href="#">
-          <span class="fa-stack fa-lg twitter">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a href="#">
-          <span class="fa-stack fa-lg linkedin">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
+    <!--Begin Hero-->
+    <div class="hero-section">
+      <div class="hero-section-text">
+        <h1>Meme Database</h1>
+        <h5>Dating back to the age of sanik</h5>
       </div>
     </div>
-    <div class="small-12 medium-8 columns">
-      <h4 class="separator-left">MeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMe</h4>
-      <p>Like your memes?
-        Like picture of memes?
-        Like videos of memes?
-        Welcome to the Meme Page</p>
+
+    <!--End Hero-->
+
+    <div class="ecommerce-loading-button text-center">
+      <div class="loading-button">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      Select image to upload:
+      <input type="file" name="fileToUpload" id="fileToUpload">
+    </form>
+  </div>
+  </div>
+
+  <!-- Begin Content-->
+  <div class="ecommerce-loading-button text-center">
+    <div class="loading-button">
+      <button type="button" class="primary button" data-loading-start>
+        Submit Meme
+      </button>
+      <button type="button" class="primary button hide" data-loading-end>
+        <i class='fa fa-refresh fa-spin'></i> Processing Dank Memes
+      </button>
+    </div> <!-- refresh -->
+    <div data-success-message class="callout success hide">
+      Thanks, your meme has been uploaded!
     </div>
   </div>
-</div>
 
-
-
-    <!--End Content-->
+  <!--End Content-->
 
       <!--Begin Footer-->
       <footer class="marketing-site-footer">
@@ -105,7 +99,7 @@
             <h4 class="marketing-site-footer-title">Instagram</h4>
             <div class="row small-up-3">
               <div class="column column-block">
-                <img src="../randoimage/triangle.png" alt="" />
+                <img src="../randoimage/shook.png" alt="" />
               </div>
               <div class="column column-block">
                 <img src="http://placehold.it/75" alt="" />
@@ -133,10 +127,10 @@
             <div class="column">
               <ul class="menu marketing-site-footer-bottom-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="../Aboutt/about.html">About</a></li>
                 <li><a href="..Galleryy/aye.html">Gallery</a></li>
                 <li><a href="../Videos/video.html">Videos</a></li>
-                <li><a href="../Upload/upload.html">Upload Memes</a></li>
+                <li><a href="#">Upload Memes</a></li>
               </ul>
             </div>
           </div>
@@ -151,5 +145,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/content.js"></script>
   </body>
 </html>
