@@ -7,11 +7,10 @@
     <title>Meme</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/button.css">
   </head>
   <body>
 
@@ -20,12 +19,13 @@
       <h1 class="sticky-shrinknav-header-title">Dank Meme Time</h1>
       <ul class="menu align-center sticky-shrinknav-menu">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../Aboutt/about.html">About</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="../Aboutt.about.html">About</a></li>
+        <li><a href="../Galleryy/aye.html">Gallery</a></li>
         <li><a href="../Videos/video.html">Videos</a></li>
         <li><a href="../signup/signup.html">Sign Up</a></li>
-        <li><a href="../test/survey.html">Survey</a></li>
+        <li><a href="#">Survey</a></li>
         <li><a href="../Upload/upload.html">Upload Memes</a></li>
+
       </ul>
     </header>
 
@@ -34,34 +34,34 @@
     <!--End Nav-->
 
 
-    <!--Begin Content-->
-    <div class="row align-center">
-      <div class="product-image-gallery">
-        <img class="pdp-product-image" id="main-product-image" src="images/smesh.jpg" alt="">
-        <br>
-        <ul class="menu product-thumbs align-center">
-          <li> <a class="sim-thumb" data-image="images/smesh.jpg"><img src="images/smesh.jpg" alt=""></a> </li>
-          <li> <a class="sim-thumb" data-image="images/flop.jpg"><img src="images/flop.jpg" alt=""></a> </li>
-          <li> <a class="sim-thumb" data-image="images/horseyan.png"><img src="images/horseyan.png" alt=""></a> </li>
-          <li> <a class="sim-thumb" data-image="images/kekk3.png"><img src="images/kekk3.png" alt=""></a> </li>
-        </ul>
-      </div>
+    <!doctype html>
+    <html ng-app="todoApp">
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="../js/todo.js"></script>
+    <link rel="stylesheet" href="../css/todo.css">
+  </head>
+  <body>
+    <h2>What memes do you like?</h2>
+    <div ng-controller="TodoListController as todoList">
+      <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+      [ <a href="" ng-click="todoList.archive()">archive</a> ]
+      <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+          </label>
+        </li>
+      </ul>
+      <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText"  size="30"
+        placeholder="add new todo here">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
     </div>
-
-
-    <!--End Content-->
-
-    <!--Begin Button-->
-    <button class="button-hover-like button"><span>Like me</span><i class="fa fa-heart"></i></button>
-
-
-    <!--End Button-->
-
-    <!--Begin Button-->
-    <button class="button-hover-like button"><span>No like me</span><i class="fa fa-heart"></i></button>
-
-
-    <!--End Button-->
+  </body>
+  </html>
 
       <!--Begin Footer-->
       <footer class="marketing-site-footer">
@@ -94,7 +94,7 @@
             <h4 class="marketing-site-footer-title">Instagram</h4>
             <div class="row small-up-3">
               <div class="column column-block">
-                <img src="../randoimage/shook.png" alt="" />
+                <img src="../randoimage/triangle.png" alt="" />
               </div>
               <div class="column column-block">
                 <img src="http://placehold.it/75" alt="" />
@@ -122,8 +122,8 @@
             <div class="column">
               <ul class="menu marketing-site-footer-bottom-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../Aboutt/about.html">About</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="..Galleryy/aye.html">Gallery</a></li>
                 <li><a href="../Videos/video.html">Videos</a></li>
                 <li><a href="../Upload/upload.html">Upload Memes</a></li>
               </ul>
@@ -139,7 +139,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/content.js"></script>
+    <script src="../js/nav.js"></script>
   </body>
 </html>
